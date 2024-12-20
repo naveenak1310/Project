@@ -1,0 +1,205 @@
+/* General Styles */
+.booking-page-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f7f7f7; /* Light grey background for a clean look */
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+.unavailable-message {
+    background-color: #ffe5e5; /* Light red background to indicate a warning */
+    color: #ff5a5f; /* Matching color with the submit button */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+}
+
+
+/* Error message styles */
+.booking-error-message {
+    color: #ff5a5f;
+    background-color: #fdd;
+    border: 1px solid #fbb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    animation: slideInFromTop 1s ease-in-out;
+    letter-spacing: 1px; /* Slight letter spacing for a polished look */
+}
+
+.hall-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hall-image {
+    width: 100%;
+    max-width: 600px; /* Increase the max width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    transition: transform 0.3s ease;
+}
+
+.hall-image:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.hall-details-container {
+    background-color: #fff; /* White background for the content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.hall-details-container h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hall-details-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hall-details-container strong {
+    color: #333;
+}
+
+/* Booking Form Styles */
+.booking-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+    border-color: #ff5a5f; /* Matching the button color on focus */
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto 0;
+}
+
+.btn-submit:hover {
+    background-color: #e04e50;
+    transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-page-container {
+        padding: 15px;
+    }
+
+    .booking-header {
+        font-size: 28px;
+    }
+
+    .hall-details-container h1 {
+        font-size: 24px;
+    }
+
+    .booking-form-container h2 {
+        font-size: 20px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

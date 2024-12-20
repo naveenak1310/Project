@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 7px;
+    background-color: #333;
+    height: 70px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 8px;
+    margin-bottom: 25px;
+}
+
+.navbar-title {
+    color: white; /* Ensure the text is white */
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-top: 0; /* Adjusted margin for proper alignment */
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    align-items: flex-start; /* Align links to the top */
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: white; /* Ensure link text is white */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-top: 10px; /* Additional padding to move links up */
+}

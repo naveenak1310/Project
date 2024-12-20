@@ -1,0 +1,104 @@
+/* Ensure the HTML and body are set up correctly for scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.homepage-container {
+  width: 100%;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url('../../assets/images/wall1.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rooms-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.room-card {
+  background-color: #c9a660;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem;
+  opacity: 0; /* Start hidden for animation */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover and animation */
+}
+
+.room-card:hover {
+  transform: scale(1.05);
+}
+
+.room-image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure image covers the area while maintaining aspect ratio */
+  border-bottom: 2px solid #ccc;
+}
+
+.room-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.room-description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.more-info-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #8b5e1a;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-button:hover {
+  background-color: #ffffff;
+}
+
+@keyframes popOut {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.room-card.pop-out {
+  opacity: 1;
+  animation: popOut 0.5s ease-out;
+}

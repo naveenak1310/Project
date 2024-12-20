@@ -1,0 +1,294 @@
+.primary-button {
+    margin-top: 5rem;
+    margin-right: 1rem;
+    padding: .6rem;
+    width: 10rem;
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: capitalize
+}
+
+/***    Landing Page     ***/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 30px; /* Add vertical space between elements */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+    padding: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.primary-button {
+    margin: 20px 10px 0x 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb5757;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+    background-color: #00000071;
+}
+
+.main-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px; /* Add space below the title */
+    text-align: center; /* Center the title */
+    line-height: 1.2; /* Adjust line spacing if needed */
+}
+
+/***    Login Page     ***/
+h2 {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 3rem;
+    max-width: 25rem;
+}
+
+form label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 0 0 0.2rem 0;
+    padding: 0;
+}
+
+.right-label {
+    float: right;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#sub_btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    background: #222;
+    color: #f5eeee;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#sub_btn:hover {
+    background: #6b6868d7;
+    transition: all .5s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a {
+    color: rgba(0, 0, 0, 0.797);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+/***    Register Page     ***/
+/* Additional styles for the admin login button */
+.admin-login-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.abc{
+    display: flex ;
+    flex-direction: row;
+}
+.admin-login-button button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.admin-login-button button:hover {
+    background-color: #333333;
+}
+
+/* Container for the checkbox and text */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* AdminLoginPage.css or your relevant CSS file */
+
+.checkbox-container input[type="checkbox"] {
+    width: 1rem; /* Smaller width for the checkbox */
+    height: 1rem; /* Smaller height for the checkbox */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    vertical-align: middle; /* Align checkbox with text */
+}
+
+.checkbox-container span {
+    font-size: 0.8rem; /* Adjust text size as needed */
+    margin-left: 0.5rem; /* Adjust space between checkbox and label */
+    line-height: 1.2; /* Adjust line height to align text with checkbox */
+}
+
+/***    Home Page     ***/
+.home-page-title {
+    color: #222
+}
+/* App.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container covers at least the viewport height */
+  }
+  
+  .main-content {
+    flex: 1; /* Allow main content to grow and push the footer to the bottom */
+  }
+  
+
+
+
+  .forget-password-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9; /* Optional: background color */
+}
+
+.content-container {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust based on preference */
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+h5 {
+    margin-bottom: 1.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

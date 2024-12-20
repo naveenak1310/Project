@@ -1,0 +1,68 @@
+.facilities-container {
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+    background: linear-gradient(135deg, #8d1418 0%, #943f68 100%);
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+.facilities-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.facility-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+}
+
+.facility-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.facility-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.facility-description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .facilities-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facility-card {
+        width: 90%;
+    }
+}

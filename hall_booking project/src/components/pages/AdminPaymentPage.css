@@ -1,0 +1,49 @@
+/* AdminPaymentPage.css */
+.admin-payments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.admin-payments-container h1 {
+    font-size: 2em; /* Similar font size to the provided example */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payments-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Match max-width of the booking page */
+}
+
+.payment-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+}
+
+.payment-card p {
+    margin: 5px 0;
+    font-size: 1.1em; /* Match font size with booking page */
+    color: #555;
+}
+
+.payment-card p span {
+    font-weight: bold;
+    color: #333;
+}
